@@ -1,0 +1,11 @@
+- args:
+    definition:
+      forward_client_headers: false
+      headers: []
+      timeout_seconds: 60
+      # for mac or windows
+      url: http://host.docker.internal:8081/graphql
+      # on linux (look for docker bridge ip : `ip addr show docker0`)
+      # url: http://172.17.0.1:8081/graphql
+    name: weather
+  type: add_remote_schema
