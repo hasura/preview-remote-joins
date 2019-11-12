@@ -1,0 +1,13 @@
+- args:
+    hasura_fields:
+    - city
+    name: cityWeather
+    remote_field:
+      cityWeather:
+        arguments:
+          city_name: $city
+    remote_schema: weather
+    table:
+      name: users
+      schema: public
+  type: create_remote_relationship

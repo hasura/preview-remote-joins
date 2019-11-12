@@ -1,0 +1,6 @@
+- args:
+    name: cityWeather
+    table:
+      name: users
+      schema: public
+  type: delete_remote_relationship
